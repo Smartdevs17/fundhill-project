@@ -19,7 +19,7 @@ const AuthLayout = () => {
                       <div className="text-center">
                         <div className="my-3">
                           <NavLink to="/">
-                            <span><img src="/assets/images/logo.png" alt="" height={28} /></span>
+                            <span><img src="/assets/images/logo-sm.png" alt="" height={28} />  </span>
                           </NavLink>
                         </div>
                       </div>

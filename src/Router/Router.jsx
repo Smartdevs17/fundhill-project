@@ -2,6 +2,7 @@ import {
   BrowserRouter,
   Routes,
 } from "react-router-dom";
+import AdminRoutes from "./AdminRoutes/AdminRoutes";
 import AuthRoutes from "./AuthRoutes";
 
 const Router = () => {
@@ -9,6 +10,7 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         {AuthRoutes()}  {/* AUTH ROUTES */}
+        {AdminRoutes()}
       </Routes>
     </BrowserRouter>
   );
