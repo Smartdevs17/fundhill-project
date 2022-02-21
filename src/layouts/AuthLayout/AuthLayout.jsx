@@ -1,11 +1,15 @@
+// STYLES
+import "./AuthBg.css";
+import "./AuthLayout.css";
+
 import { Fragment } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
 const AuthLayout = () => {
   return (
     <Fragment>
-      <div className="authentication-bg">
-        <div className="account-pages pt-5 my-5">
+      <div className="authentication-bg pt-5">
+        <div className="account-pages">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-8 col-lg-6 col-xl-5">
@@ -18,7 +22,6 @@ const AuthLayout = () => {
                             <span><img src="/assets/images/logo.png" alt="" height={28} /></span>
                           </NavLink>
                         </div>
-                        <h5 className="text-muted text-uppercase py-3 font-16">Sign In</h5>
                       </div>
                       {/* FORMS WILL INJECTED */}
                       <Outlet />
