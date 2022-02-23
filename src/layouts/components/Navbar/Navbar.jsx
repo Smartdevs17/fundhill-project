@@ -1,6 +1,10 @@
 import { Fragment } from 'react'
 import { NavLink} from "react-router-dom";
-
+import { FaAlignJustify} from "react-icons/fa";
+import {IoMdNotificationsOutline,IoIosArrowDropdownCircle} from "react-icons/io"
+import {MdOutlineSearch,MdOutlineEmail,MdArrowDropDownCircle} from "react-icons/md"
+import {FiSettings} from "react-icons/fi"
+// import {RiArrowDropDownLine} from "react-icons/ri"
 
 function Navbar() {
   return (
@@ -40,8 +44,9 @@ function Navbar() {
                     </li>
 
                     <li className="dropdown notification-list">
-                        <NavLink className="nav-link dropdown-toggle  waves-effect waves-light" data-toggle="dropdown" to="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <NavLink className="nav-link dropdown-toggle  waves-effect waves-light" data-toggle="dropdown" to="#" role="button" aria-haspopup="false" >
                             <i className="mdi mdi-bell-outline noti-icon"></i>
+                            <IoMdNotificationsOutline className="noti-icon"/>
                             <span className="noti-icon-badge"></span>
                         </NavLink>
                         <div className="dropdown-menu dropdown-menu-right dropdown-lg">
@@ -61,6 +66,7 @@ function Navbar() {
                                 <NavLink to="/" className="dropdown-item notify-item">
                                     <div className="notify-icon bg-success">
                                         <i className="mdi mdi-settings-outline"></i>
+                                        <FiSettings />
                                     </div>
                                     <p className="notify-details">New settings
                                         <small className="text-muted">There are new settings available</small>
@@ -116,6 +122,7 @@ function Navbar() {
                     <li className="dropdown notification-list">
                         <NavLink className="nav-link dropdown-toggle  waves-effect waves-light" data-toggle="dropdown" to="#" role="button" aria-haspopup="false" aria-expanded="false">
                             <i className="mdi mdi-email-outline noti-icon"></i>
+                            <MdOutlineEmail className="noti-icon"/>
                             <span className="noti-icon-badge"></span>
                         </NavLink>
                         <div className="dropdown-menu dropdown-menu-right dropdown-lg">
@@ -185,6 +192,7 @@ function Navbar() {
                             <img src="/assets/images/users/avatar-1.jpg" alt="" className="rounded-circle" />
                             <span className="d-none d-sm-inline-block ml-1 font-weight-medium">Alex M.</span>
                             <i className="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                            <MdArrowDropDownCircle className="d-none d-lg-inline-block" />
                         </NavLink>
                         <div className="dropdown-menu dropdown-menu-right profile-dropdown ">
 
@@ -200,6 +208,7 @@ function Navbar() {
 
                             <NavLink to="/" className="dropdown-item notify-item">
                                 <i className="mdi mdi-settings-outline"></i>
+                                <FiSettings />
                                 <span>Settings</span>
                             </NavLink>
 
@@ -221,6 +230,7 @@ function Navbar() {
                     <li className="dropdown notification-list">
                         <NavLink to="/" className="nav-link right-bar-toggle waves-effect waves-light">
                             <i className="mdi mdi-settings-outline noti-icon"></i>
+                            <FiSettings className="noti-icon" />
                         </NavLink>
                     </li>
 
@@ -254,6 +264,7 @@ function Navbar() {
                     <li>
                         <button className="button-menu-mobile waves-effect waves-light">
                             <i className="mdi mdi-menu"></i>
+                            <FaAlignJustify />
                         </button>
                     </li>
         
@@ -264,7 +275,7 @@ function Navbar() {
                                     <input type="text" className="form-control" placeholder="Search..." />
                                     <div className="input-group-append">
                                         <button className="btn" type="submit">
-                                            <i className="fas fa-search"></i>
+                                            <MdOutlineSearch />
                                         </button>
                                     </div>
                                 </div>
@@ -276,6 +287,7 @@ function Navbar() {
                         <NavLink className="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" to="#" role="button" aria-haspopup="false" aria-expanded="false">
                             Mega Menu
                             <i className="mdi mdi-chevron-down"></i> 
+                            <IoIosArrowDropdownCircle className=""/>
                         </NavLink>
                         <div className="dropdown-menu dropdown-megamenu p-0">
                             <div className="row">

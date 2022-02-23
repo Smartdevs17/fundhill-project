@@ -1,5 +1,9 @@
 import { Fragment } from 'react'
 import { NavLink} from "react-router-dom";
+import { GoCalendar} from "react-icons/go";
+
+import {MdOutlineDashboard,MdOutlineSpaceDashboard,MdContentCopy,MdPages} from "react-icons/md"
+import "./sidebar.css"
 
 function Sidebar() {
   return (
@@ -16,25 +20,27 @@ function Sidebar() {
 
                             <li>
                                 <NavLink to="index.html">
-                                    <i class="mdi mdi-view-dashboard"></i>
+                                    <i ><MdOutlineDashboard /></i>
+                                    
                                     <span> Dashboard </span>
                                 </NavLink>
                             </li>
 
                             <li>
                                 <NavLink to="calendar.html">
-                                    <i class="mdi mdi-calendar-month"></i>
+                                    <i > <GoCalendar  /> </i>
                                     <span> Calendar </span>
                                 </NavLink>
                             </li>
 
                             <li>
                                 <NavLink to="/">
-                                    <i class="mdi mdi-flip-horizontal"></i>
+                                    <i ><MdOutlineSpaceDashboard  /></i>
+                                    
                                     <span> Layouts </span>
                                     <span class="badge badge-danger badge-pill float-right">New</span>
                                 </NavLink>
-                                <ul class="nav-second-level" aria-expanded="false">
+                                <ul class="nav-second-level" >
                                     <li><NavLink to="layouts-dark-sidebar.html">Dark Sidebar</NavLink></li>
                                     <li><NavLink to="layouts-small-sidebar.html">Small Sidebar</NavLink></li>
                                     <li><NavLink to="layouts-sidebar-collapsed.html">Sidebar Collapsed</NavLink></li>
@@ -45,11 +51,12 @@ function Sidebar() {
                 
                             <li>
                                 <NavLink to="/">
-                                    <i class="mdi mdi-google-pages"></i>
+                                    <i ><MdPages /></i>
+                                    
                                     <span> Pages </span>
                                     <span class="menu-arrow"></span>
                                 </NavLink>
-                                <ul class="nav-second-level" aria-expanded="false">
+                                <ul class="nav-second-level" >
                                     <li><NavLink to="pages-starter.html">Starter Page</NavLink></li>
                                     <li><NavLink to="pages-login.html">Login</NavLink></li>
                                     <li><NavLink to="pages-register.html">Register</NavLink></li>
@@ -62,11 +69,12 @@ function Sidebar() {
 
                             <li>
                                 <NavLink to="/">
-                                    <i class="mdi mdi-content-copy"></i>
+                                    <i > <MdContentCopy /></i>
+                                 
                                     <span> Extra Pages </span>
                                     <span class="menu-arrow"></span>
                                 </NavLink>
-                                <ul class="nav-second-level" aria-expanded="false">
+                                <ul class="nav-second-level" >
                                     <li><NavLink to="pages-timeline.html">Timeline</NavLink></li>
                                     <li><NavLink to="pages-invoice.html">Invoice</NavLink></li>
                                     <li><NavLink to="pages-pricing.html">Pricing</NavLink></li>
@@ -76,9 +84,9 @@ function Sidebar() {
                                 </ul>
                             </li>
 
-                            <li class="menu-title mt-2">Components</li>
+                            {/* <li class="menu-title mt-2">Components</li> */}
 
-                            <li>
+                            {/* <li>
                                 <NavLink to="/">
                                     <i class="mdi mdi-format-underline"></i>
                                     <span> User Interface </span>
@@ -222,7 +230,9 @@ function Sidebar() {
                                         </ul>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> */}
+
+                            
                         </ul>
 
                     </div>

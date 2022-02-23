@@ -1,0 +1,9 @@
+.sidebar-icons{
+    /* margin: 0 10px 0 3px; */
+    display: inline-block;
+    line-height: 1.0625rem;
+    margin: 0 10px 0 3px;
+    text-align: center;
+    width: 20px;
+    font-size: 18px;
+}
