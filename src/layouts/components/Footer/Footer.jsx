@@ -1,34 +1,14 @@
 import { Fragment } from 'react'
-import { NavLink} from "react-router-dom";
+import { NavLink,Outlet} from "react-router-dom";
 
 function Footer() {
   return (
         <Fragment>
              
             <div class="content-page">
-                <div class="content">
-                    
-                    <div class="container-fluid">
-                        
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="page-title-box">
-                                    <div class="page-title-right">
-                                        <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><NavLink to="/">Uplon</NavLink></li>
-                                            <li class="breadcrumb-item"><NavLink to="/">Pages</NavLink></li>
-                                            <li class="breadcrumb-item active">Starter</li>
-                                        </ol>
-                                    </div>
-                                    <h4 class="page-title">Starter page</h4>
-                                </div>
-                            </div>
-                        </div>     
-                        
-                    </div> 
-                </div> 
+             
 
-                
+                <Outlet />
 
                 <footer class="footer">
                     <div class="container-fluid">

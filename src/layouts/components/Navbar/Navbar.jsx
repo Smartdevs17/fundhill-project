@@ -65,8 +65,7 @@ function Navbar() {
 
                                 <NavLink to="/" className="dropdown-item notify-item">
                                     <div className="notify-icon bg-success">
-                                        <i className="mdi mdi-settings-outline"></i>
-                                        <FiSettings />
+                                        <i className="mdi mdi-settings-outline"> <FiSettings /></i>
                                     </div>
                                     <p className="notify-details">New settings
                                         <small className="text-muted">There are new settings available</small>
@@ -190,7 +189,7 @@ function Navbar() {
                     <li className="dropdown notification-list">
                         <NavLink className="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" to="#" role="button" aria-haspopup="false" aria-expanded="false">
                             <img src="/assets/images/users/avatar-1.jpg" alt="" className="rounded-circle" />
-                            <span className="d-none d-sm-inline-block ml-1 font-weight-medium">Alex M.</span>
+                            <span className="d-none d-sm-inline-block ml-1 font-weight-medium">Smart Developer.</span>
                             <i className="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
                             <MdArrowDropDownCircle className="d-none d-lg-inline-block" />
                         </NavLink>
@@ -227,24 +226,24 @@ function Navbar() {
                         </div>
                     </li>
 
-                    <li className="dropdown notification-list">
+                    {/* <li className="dropdown notification-list">
                         <NavLink to="/" className="nav-link right-bar-toggle waves-effect waves-light">
                             <i className="mdi mdi-settings-outline noti-icon"></i>
                             <FiSettings className="noti-icon" />
                         </NavLink>
-                    </li>
+                    </li> */}
 
                 </ul>
 
                 <div className="logo-box">
                     <NavLink to="index.html" className="logo text-center logo-dark">
                         <span className="logo-lg">
-                            <img src="/assets/images/logo.png" alt="" height="22" />
+                            <img src="/assets/images/logo-sm.jpg" alt="" height="50" width="50" />
                             {/* <!-- <span className="logo-lg-text-dark">Uplon</span> --> */}
                         </span>
                         <span className="logo-sm">
                             {/* <!-- <span className="logo-lg-text-dark">U</span> --> */}
-                            <img src="/assets/images/logo-sm.png" alt="" height="24" />
+                            <img src="/assets/images/logo-sm.jpg" alt="" height="30" width='30' />
                         </span>
                     </NavLink>
 
@@ -283,7 +282,7 @@ function Navbar() {
                         </form>
                     </li>
 
-                    <li className="dropdown dropdown-mega d-none d-lg-block">
+                    {/* <li className="dropdown dropdown-mega d-none d-lg-block">
                         <NavLink className="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" to="#" role="button" aria-haspopup="false" aria-expanded="false">
                             Mega Menu
                             <i className="mdi mdi-chevron-down"></i> 
@@ -424,7 +423,10 @@ function Navbar() {
                             </div>
 
                         </div>
-                    </li>
+                    </li> */}
+
+
+
                 </ul>
             </div>
 

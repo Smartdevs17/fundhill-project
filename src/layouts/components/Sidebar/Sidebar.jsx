@@ -8,15 +8,15 @@ import "./sidebar.css"
 function Sidebar() {
   return (
     <Fragment>
-            <div class="left-side-menu">
+            <div className="left-side-menu">
 
-                <div class="slimscroll-menu">
+                <div className="slimscroll-menu">
 
                     <div id="sidebar-menu">
 
-                        <ul class="metismenu" id="side-menu">
+                        <ul className="metismenu" id="side-menu">
 
-                            <li class="menu-title">Navigation</li>
+                            <li className="menu-title">Navigation</li>
 
                             <li>
                                 <NavLink to="index.html">
@@ -24,75 +24,175 @@ function Sidebar() {
                                     
                                     <span> Dashboard </span>
                                 </NavLink>
+                                {/* <ul className="nav-second-level" >
+                                    <li><NavLink to="#">Dashboard</NavLink></li>
+                                    <li><NavLink to="#">Daily History</NavLink></li>
+                                    <li><NavLink to="#">Report</NavLink></li>
+                                </ul> */}
                             </li>
 
                             <li>
-                                <NavLink to="calendar.html">
+                                <NavLink to="/">
                                     <i > <GoCalendar  /> </i>
-                                    <span> Calendar </span>
+                                    <span> Customer </span>
                                 </NavLink>
+                                <ul className="nav-second-level" >
+                                    <li><NavLink to="layouts-dark-sidebar.html">New Customer</NavLink></li>
+                                    <li><NavLink to="layouts-small-sidebar.html">All Customers</NavLink></li>
+                                    <li><NavLink to="layouts-sidebar-collapsed.html">Withdraw</NavLink></li>
+                                    <li><NavLink to="layouts-unsticky.html">Fixed Savings</NavLink></li>
+                                    <li><NavLink to="layouts-boxed.html">Normal Savings</NavLink></li>
+                                    <li><NavLink to="layouts-boxed.html">Delete Customer</NavLink></li>
+                                    <li><NavLink to="layouts-boxed.html">Customer Details</NavLink></li>
+                                    <li><NavLink to="layouts-boxed.html">Change Phone</NavLink></li>
+                                    {/* <li><NavLink to="layouts-boxed.html">Normal Savings</NavLink></li>        */}
+                                </ul>
                             </li>
+                        
+                            <li>
+                                <NavLink to="/">
+                                    <i > <GoCalendar  /> </i>
+                                    <span> Savings Management </span>
+                                </NavLink>
+                                <ul className="nav-second-level" >
+                                    <li><NavLink to="layouts-dark-sidebar.html">Deposit & Withdraw</NavLink></li>
+                                    <li><NavLink to="layouts-small-sidebar.html">Statement of Account</NavLink></li>
+                                    <li><NavLink to="layouts-sidebar-collapsed.html">My Transaction History</NavLink></li>
+                                    <li><NavLink to="layouts-unsticky.html">Deposit Reversal</NavLink></li>
+                                    <li><NavLink to="layouts-boxed.html">End of Day Report</NavLink></li>
+                                </ul>
+                            </li>
+
+
+       
 
                             <li>
                                 <NavLink to="/">
                                     <i ><MdOutlineSpaceDashboard  /></i>
                                     
-                                    <span> Layouts </span>
-                                    <span class="badge badge-danger badge-pill float-right">New</span>
+                                    <span> Agent Management </span>
+                                    {/* <span className="badge badge-danger badge-pill float-right">New</span> */}
                                 </NavLink>
-                                <ul class="nav-second-level" >
+                                <ul className="nav-second-level" >
+                                    <li><NavLink to="#">New Agent</NavLink></li>
+                                    <li><NavLink to="#">All Agents</NavLink></li>
+                                    <li><NavLink to="#">Credit Staff</NavLink></li>
+                                    <li><NavLink to="#">Staff Expenses</NavLink></li>
+                                    {/* <li><NavLink to="layouts-boxed.html">Boxed Layout</NavLink></li> */}
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <NavLink to="/">
+                                    <i > <GoCalendar  /> </i>
+                                    <span> Withdrawal Management </span>
+                                </NavLink>
+                                <ul className="nav-second-level" >
+                                    <li><NavLink to="layouts-dark-sidebar.html">Approved Withdrawal</NavLink></li>
+                                    <li><NavLink to="layouts-small-sidebar.html">Pending Withdrawal</NavLink></li>
+                                    <li><NavLink to="layouts-sidebar-collapsed.html">Withdraw</NavLink></li>
+                                   
+                                </ul>
+                            </li>
+
+                            {/* <li>
+                                <NavLink to="/">
+                                    <i ><MdOutlineSpaceDashboard  /></i>
+                                    
+                                    <span> Layouts </span>
+                                    <span className="badge badge-danger badge-pill float-right">New</span>
+                                </NavLink>
+                                <ul className="nav-second-level" >
                                     <li><NavLink to="layouts-dark-sidebar.html">Dark Sidebar</NavLink></li>
                                     <li><NavLink to="layouts-small-sidebar.html">Small Sidebar</NavLink></li>
                                     <li><NavLink to="layouts-sidebar-collapsed.html">Sidebar Collapsed</NavLink></li>
                                     <li><NavLink to="layouts-unsticky.html">Unsticky Layout</NavLink></li>
                                     <li><NavLink to="layouts-boxed.html">Boxed Layout</NavLink></li>
                                 </ul>
-                            </li>
+                            </li> */}
+                   
                 
                             <li>
                                 <NavLink to="/">
                                     <i ><MdPages /></i>
                                     
-                                    <span> Pages </span>
-                                    <span class="menu-arrow"></span>
+                                    <span> Accounting </span>
+                                    <span className="menu-arrow"></span>
                                 </NavLink>
-                                <ul class="nav-second-level" >
-                                    <li><NavLink to="pages-starter.html">Starter Page</NavLink></li>
-                                    <li><NavLink to="pages-login.html">Login</NavLink></li>
-                                    <li><NavLink to="pages-register.html">Register</NavLink></li>
-                                    <li><NavLink to="pages-recoverpw.html">Recover Password</NavLink></li>
-                                    <li><NavLink to="pages-lock-screen.html">Lock Screen</NavLink></li>
-                                    <li><NavLink to="pages-404.html">Error 404</NavLink></li>
-                                    <li><NavLink to="pages-500.html">Error 500</NavLink></li>
+                                <ul className="nav-second-level" >
+                                    <li><NavLink to="#">Ledger Master</NavLink></li>
+                                    <li><NavLink to="#">All Customer</NavLink></li>
+                                    <li><NavLink to="#">All Agent</NavLink></li>
+                                    <li><NavLink to="#">All Deposit</NavLink></li>
+                                    <li><NavLink to="#">All Withdrawal</NavLink></li>
+                                    <li><NavLink to="pages-404.html">Staff Performance</NavLink></li>
+                                    <li><NavLink to="pages-500.html">Balance Sheet</NavLink></li>
                                 </ul>
                             </li>
+
 
                             <li>
                                 <NavLink to="/">
                                     <i > <MdContentCopy /></i>
                                  
-                                    <span> Extra Pages </span>
-                                    <span class="menu-arrow"></span>
+                                    <span> Loan Management </span>
+                                    <span className="menu-arrow"></span>
                                 </NavLink>
-                                <ul class="nav-second-level" >
-                                    <li><NavLink to="pages-timeline.html">Timeline</NavLink></li>
-                                    <li><NavLink to="pages-invoice.html">Invoice</NavLink></li>
-                                    <li><NavLink to="pages-pricing.html">Pricing</NavLink></li>
-                                    <li><NavLink to="pages-gallery.html">Gallery</NavLink></li>
-                                    <li><NavLink to="pages-maintenance.html">Maintenance</NavLink></li>
-                                    <li><NavLink to="pages-comingsoon.html">Coming Soon</NavLink></li>
+                                <ul className="nav-second-level" >
+                                    <li><NavLink to="#">Add Group Loan</NavLink></li>
+                                    <li><NavLink to="#">View Group Loan</NavLink></li>
+                                    <li><NavLink to="#">Add borrower</NavLink></li>
+                                    <li><NavLink to="#">All Loans</NavLink></li>
+                                    <li><NavLink to="#">Pending Approval Loan</NavLink></li>
+                                    <li><NavLink to="#">Rejected Loan</NavLink></li>
+                                    <li><NavLink to="#">Trash Loan</NavLink></li>
+                                    <li><NavLink to="#">Pending disbursment</NavLink></li>
+                                    <li><NavLink to="#">Ongoing Loan</NavLink></li>
+                                    <li><NavLink to="#">Completed Paid Loan</NavLink></li>
+                                    <li><NavLink to="#">Due Loan</NavLink></li>
+                                    <li><NavLink to="#">Missed Payment</NavLink></li>
+                                    <li><NavLink to="#">Written OFF</NavLink></li>
+                                    <li><NavLink to="#">Teller Pending Payment</NavLink></li>
+                                    <li><NavLink to="#">Teller Payment History</NavLink></li>
+
                                 </ul>
                             </li>
 
-                            {/* <li class="menu-title mt-2">Components</li> */}
 
                             {/* <li>
                                 <NavLink to="/">
-                                    <i class="mdi mdi-format-underline"></i>
-                                    <span> User Interface </span>
-                                    <span class="menu-arrow"></span>
+                                    <i > <MdContentCopy /></i>
+                                 
+                                    <span> History </span>
+                                    <span className="menu-arrow"></span>
+                                    <span className="badge badge-danger badge-pill float-right">New</span>
                                 </NavLink>
-                                <ul class="nav-second-level" aria-expanded="false">
+                                <ul className="nav-second-level" >
+                                    <li><NavLink to="pages-timeline.html">All History</NavLink></li>
+                                    <li><NavLink to="pages-invoice.html">Savings</NavLink></li>
+                                    <li><NavLink to="pages-pricing.html">Monthly Charges</NavLink></li>
+                                    <li><NavLink to="pages-gallery.html">Withdrawal Charges</NavLink></li>
+                                    <li><NavLink to="pages-maintenance.html">Loan Savings</NavLink></li>
+                                    <li><NavLink to="pages-comingsoon.html">Sms</NavLink></li>
+                                    <li><NavLink to="pages-comingsoon.html">Utility</NavLink></li>
+                                    <li><NavLink to="pages-comingsoon.html">Expenses</NavLink></li>
+                                    <li><NavLink to="pages-comingsoon.html">Withdrawal</NavLink></li>
+                                    <li><NavLink to="pages-comingsoon.html">View Insurance</NavLink></li>
+
+
+                                </ul>
+                            </li> */}
+
+                            {/* <li className="menu-title mt-2">Components</li> */}
+
+                            {/* <li>
+                                <NavLink to="/">
+                                    <i className="mdi mdi-format-underline"></i>
+                                    <span> User Interface </span>
+                                    <span className="menu-arrow"></span>
+                                </NavLink>
+                                <ul className="nav-second-level" aria-expanded="false">
                                     <li><NavLink to="ui-buttons.html">Buttons</NavLink></li>
                                     <li><NavLink to="ui-cards.html">Cards</NavLink></li>
                                     <li><NavLink to="ui-dropdowns.html">Dropdowns</NavLink></li>
@@ -110,11 +210,11 @@ function Sidebar() {
 
                             <li>
                                 <NavLink to="/">
-                                    <i class="mdi mdi-package-variant-closed"></i>
+                                    <i className="mdi mdi-package-variant-closed"></i>
                                     <span> Components </span>
-                                    <span class="menu-arrow"></span>
+                                    <span className="menu-arrow"></span>
                                 </NavLink>
-                                <ul class="nav-second-level" aria-expanded="false">
+                                <ul className="nav-second-level" aria-expanded="false">
                                     <li><NavLink to="components-grid.html">Grid</NavLink></li>
                                     <li><NavLink to="components-range-sliders.html">Range sliders</NavLink></li>
                                     <li><NavLink to="components-sweet-alert.html">Sweet Alerts</NavLink></li>
@@ -126,11 +226,11 @@ function Sidebar() {
 
                             <li>
                                 <NavLink to="/">
-                                    <i class="mdi mdi-puzzle-outline"></i>
+                                    <i className="mdi mdi-puzzle-outline"></i>
                                     <span> Widgets </span>
-                                    <span class="menu-arrow"></span>
+                                    <span className="menu-arrow"></span>
                                 </NavLink>
-                                <ul class="nav-second-level" aria-expanded="false">
+                                <ul className="nav-second-level" aria-expanded="false">
                                     <li><NavLink to="/">Tile Box</NavLink></li>
                                     <li><NavLink to="/">Chart Widgets</NavLink></li>
                                 </ul>
@@ -138,11 +238,11 @@ function Sidebar() {
 
                             <li>
                                 <NavLink to="/">
-                                    <i class="mdi mdi-black-mesa"></i>
+                                    <i className="mdi mdi-black-mesa"></i>
                                     <span> Icons </span>
-                                    <span class="menu-arrow"></span>
+                                    <span className="menu-arrow"></span>
                                 </NavLink>
-                                <ul class="nav-second-level" aria-expanded="false">
+                                <ul className="nav-second-level" aria-expanded="false">
                                     <li><NavLink to="icons-materialdesign.html">Material Design</NavLink></li>
                                     <li><NavLink to="icons-ionicons.html">Ion Icons</NavLink></li>
                                     <li><NavLink to="icons-fontawesome.html">Font awesome</NavLink></li>
@@ -156,11 +256,11 @@ function Sidebar() {
 
                             <li>
                                 <NavLink to="/">
-                                    <i class="mdi mdi-file-document-box-check-outline"></i>
-                                    <span class="badge badge-warning badge-pill float-right">8</span>
+                                    <i className="mdi mdi-file-document-box-check-outline"></i>
+                                    <span className="badge badge-warning badge-pill float-right">8</span>
                                     <span> Forms </span>
                                 </NavLink>
-                                <ul class="nav-second-level" aria-expanded="false">
+                                <ul className="nav-second-level" aria-expanded="false">
                                     <li><NavLink to="form-elements.html">General Elements</NavLink></li>
                                     <li><NavLink to="form-advanced.html">Advanced Form</NavLink></li>
                                     <li><NavLink to="form-validation.html">Form Validation</NavLink></li>
@@ -174,11 +274,11 @@ function Sidebar() {
 
                             <li>
                                 <NavLink to="/">
-                                    <i class="mdi mdi-table-settings"></i>
+                                    <i className="mdi mdi-table-settings"></i>
                                     <span> Tables </span>
-                                    <span class="menu-arrow"></span>
+                                    <span className="menu-arrow"></span>
                                 </NavLink>
-                                <ul class="nav-second-level" aria-expanded="false">
+                                <ul className="nav-second-level" aria-expanded="false">
                                     <li><NavLink to="tables-basic.html">Basic Tables</NavLink></li>
                                     <li><NavLink to="tables-datatable.html">Data Tables</NavLink></li>
                                     <li><NavLink to="tables-responsive.html">Responsive Table</NavLink></li>
@@ -188,11 +288,11 @@ function Sidebar() {
 
                             <li>
                                 <NavLink to="/">
-                                    <i class="mdi mdi-poll"></i>
+                                    <i className="mdi mdi-poll"></i>
                                     <span> Charts </span>
-                                    <span class="menu-arrow"></span>
+                                    <span className="menu-arrow"></span>
                                 </NavLink>
-                                <ul class="nav-second-level" aria-expanded="false">
+                                <ul className="nav-second-level" aria-expanded="false">
                                     <li><NavLink to="charts-flot.html">Flot Charts</NavLink></li>
                                     <li><NavLink to="charts-morris.html">Morris Charts</NavLink></li>
                                     <li><NavLink to="charts-chartjs.html">Chartjs</NavLink></li>
@@ -204,23 +304,23 @@ function Sidebar() {
                                 </ul>
                             </li>
 
-                            <li class="menu-title mt-2">More</li>
+                            <li className="menu-title mt-2">More</li>
 
                             <li>
                                 <NavLink to="/">
-                                    <i class="mdi mdi-share-variant"></i>
+                                    <i className="mdi mdi-share-variant"></i>
                                     <span> Multi Level </span>
-                                    <span class="menu-arrow"></span>
+                                    <span className="menu-arrow"></span>
                                 </NavLink>
-                                <ul class="nav-second-level nav" aria-expanded="false">
+                                <ul className="nav-second-level nav" aria-expanded="false">
                                     <li>
                                         <NavLink to="/">Level 1.1</NavLink>
                                     </li>
                                     <li>
                                         <NavLink to="/" aria-expanded="false">Level 1.2
-                                            <span class="menu-arrow"></span>
+                                            <span className="menu-arrow"></span>
                                         </NavLink>
-                                        <ul class="nav-third-level nav" aria-expanded="false">
+                                        <ul className="nav-third-level nav" aria-expanded="false">
                                             <li>
                                                 <NavLink to="/">Level 2.1</NavLink>
                                             </li>
@@ -237,7 +337,7 @@ function Sidebar() {
 
                     </div>
 
-                    <div class="clearfix"></div>
+                    <div className="clearfix"></div>
 
                 </div>
 

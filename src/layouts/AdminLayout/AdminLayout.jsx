@@ -1,6 +1,5 @@
 import {Fragment} from 'react'
-import {Footer, Navbar,Sidebar} from "../components/index"
-
+import {Footer, Navbar,Sidebar,Content} from "../components/index"
 
 
 function AdminLayout() {
@@ -9,7 +8,9 @@ function AdminLayout() {
         <div id="wrapper">
             <Navbar />
             <Sidebar />
+            
             <Footer />
+            {/* <Content /> */}
         </div>
     </Fragment>
     )
