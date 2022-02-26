@@ -9,7 +9,9 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {AuthRoutes()}  {/* AUTH ROUTES */}
+      {/* AUTH ROUTES */}
+        {AuthRoutes()}  
+        {/* ADMIN ROUTE */}
         {AdminRoutes()}
       </Routes>
     </BrowserRouter>

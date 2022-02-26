@@ -210,7 +210,8 @@ function Dashboard() {
                               </div>
                             </div>
                           </div>
-                        </div>{/* end col*/}
+                        </div>
+                        {/* end col*/}
                         <div className="col-xl-5">
                           <div className="card-box">
                             <h4 className="header-title mb-3">Top Contracts MFIs</h4>
@@ -265,11 +266,14 @@ function Dashboard() {
                               </table>
                             </div>
                           </div>
-                        </div>{/* end col*/}
+                        </div>
+                        {/* end col*/}
                       </div>
                       {/* end row */}
-                    </div> {/* end container-fluid */}
-                  </div> {/* end content */}
+                    </div>
+                     {/* end container-fluid */}
+                  </div>
+                   {/* end content */}
 
 
               
