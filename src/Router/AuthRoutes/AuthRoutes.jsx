@@ -7,6 +7,7 @@ import { AuthLayout } from "../../layouts"
 import {
   Login,
   Register,
+  Error404
 } from  "../../pages/auth";
 
 const AuthRoutes = () => {

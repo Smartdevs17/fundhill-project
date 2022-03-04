@@ -1,29 +1,27 @@
 import { Fragment } from 'react'
-import { NavLink,Outlet} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 function Footer() {
   return (
         <Fragment>
              
-            <div class="content-page">
-             
+            {/* <div className="content-page"> */}
+            
 
-                <Outlet />
-
-                <footer class="footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-12">
-                                2022 &copy; Smart Developers theme by <NavLink to="/">Coderthemes</NavLink>
+                <footer className="footer">
+                    <div className="container-fluid">
+                        <div className="row">
+                            <div className="col-md-12">
+                                2022 &copy; FundHill Developed by <NavLink to="/">Smart Developers</NavLink>
                             </div>
                         </div>
                     </div>
                 </footer>
              
 
-            </div>
+            {/* </div> */}
 
-          
+
         </Fragment>
     )
 }

@@ -1,11 +1,12 @@
 import { Fragment } from 'react'
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./newcustomer.css"
 
 function NewCustomer() {
   return (
         <Fragment>
-            <div className="content">
+        <div className='content-page'>
+        <div className="content">
                      {/* Start Content*/}
                      <div className="container-fluid">
                     {/* start page title */}
@@ -14,8 +15,8 @@ function NewCustomer() {
                         <div className="page-title-box">
                             <div className="page-title-right">
                             <ol className="breadcrumb m-0">
-                                <li className="breadcrumb-item"><NavLink to="#">FundHill</NavLink ></li>
-                                <li className="breadcrumb-item"><NavLink to="#">Forms</NavLink ></li>
+                                <li className="breadcrumb-item"><Link to="#">FundHill</Link ></li>
+                                <li className="breadcrumb-item"><Link to="#">Admin</Link ></li>
                                 <li className="breadcrumb-item active">New Customer</li>
                             </ol>
                             </div>
@@ -39,28 +40,41 @@ function NewCustomer() {
                                 <input className="form-control" type="text" placeholder="John" id="example-text-input" />
                             </div>
                             </div>
+
                             <div className="form-group row">
                             <label htmlFor="example-search-input" className="col-lg-2 col-form-label">Middle Name</label>
                             <div className="col-lg-10">
                                 <input className="form-control" type="text" placeholder="Mikel" id="example-search-input" />
                             </div>
                             </div>
+
                             <div className="form-group row">
                             <label htmlFor="example-search-input" className="col-lg-2 col-form-label">Last Name</label>
                             <div className="col-lg-10">
                                 <input className="form-control" type="text" placeholder="Doe" id="example-search-input" />
                             </div>
                             </div>
+                            
                             <div className="form-group row">
+                            <label htmlFor="example-search-input" className="col-lg-2 col-form-label">Profile Photo</label>
                                 <div className="col-lg-10">
-                                    <div className="card-box">
-                                    <h4 className="header-title mb-4">Passport Photo</h4>
                                     <input type="file" className="dropify" data-default-file="/assets/images/small/img-1.jpg" />
-                                    </div>
                                 </div>
-                                {/* end col */}                           
+                            </div>
+
+                            <div className="form-group row">
+                            <label htmlFor="example-search-input" className="col-lg-2 col-form-label">ID </label>
+                                <div className="col-lg-10">
+                                    <input type="file" className="dropify" data-default-file="/assets/images/small/img-1.jpg" />
                                 </div>
-                                {/* end row */}
+                            </div>
+
+                            <div className="form-group row">
+                            <label htmlFor="example-search-input" className="col-lg-2 col-form-label">Utility Bill</label>
+                                <div className="col-lg-10">
+                                    <input type="file" className="dropify" data-default-file="/assets/images/small/img-1.jpg" />
+                                </div>
+                            </div>
 
                             <div className="form-group row">
                             <label htmlFor="example-search-input" className="col-lg-2 col-form-label">BVN</label>
@@ -94,33 +108,43 @@ function NewCustomer() {
                             </div>
 
                         <div className="form-group row">
+                        <label htmlFor="example-tel-input" className="col-lg-2 col-form-label">Choose One</label>
+                        <div className="col-lg-10">
                             <select className="form-control" data-toggle="select2">
-                                <option>Choose One</option>
-                                <optgroup label="savings plan">
-                                    <option value="Savings">Savings</option>
-                                    <option value="fixed">Fixed Deposit</option>
-                                    <option value="loan">Loan</option>
-                                </optgroup>                         
-                            </select>
+                                    <option>Select Savings Plan</option>
+                                        <option value="Savings">Savings</option>
+                                        <option value="fixed">Fixed Deposit</option>
+                                        <option value="loan">Loan</option>
+                                </select>
+                        </div>
+                           
                         </div>
                 
 
+               
                         <div className="form-group row">
+                        <label htmlFor="example-tel-input" className="col-lg-2 col-form-label">Choose Staff</label>
+                        <div className="col-lg-10">
                             <select className="form-control" data-toggle="select2">
-                                <option>Select</option>
-                                <optgroup label="Staff">
-                                    <option value="Savings">Agent 1</option>
-                                    <option value="fixed">Agent 2</option>
-                                    <option value="loan">Agent 3</option>
-                                </optgroup>                         
-                            </select>
+                                    <option>Select One</option>
+                                        <option value="Savings">Staff 1</option>
+                                        <option value="fixed">Staff 2</option>
+                                        <option value="loan">Staff 3</option>
+                                </select>
+                        </div>
+                           
                         </div>
                         
                     
                         <button type="submit" className="btn btn-primary btn-block">Submit</button>
 
+ 
+
                         </form>
 
+                        <div className="form-group row">
+
+                        </div>
                         </div>
                         </div>
                     </div>
@@ -135,6 +159,8 @@ function NewCustomer() {
 
             </div>
            
+        </div>
+            
         </Fragment>
     )
 }

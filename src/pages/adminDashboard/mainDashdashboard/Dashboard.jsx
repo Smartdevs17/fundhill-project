@@ -1,10 +1,13 @@
 import {Fragment} from 'react'
-import { NavLink} from "react-router-dom";
+import { Link} from "react-router-dom";
+import "./Dashboard.css"
 
 function Dashboard() {
   return (
     
     <Fragment>
+
+                  <div className="content-page">
                   <div className="content">
                     {/* Start Content*/}
                     <div className="container-fluid">
@@ -14,7 +17,7 @@ function Dashboard() {
                           <div className="page-title-box">
                             <div className="page-title-right">
                               <ol className="breadcrumb m-0">
-                                <li className="breadcrumb-item"><NavLink to="#">FundHill</NavLink></li>
+                                <li className="breadcrumb-item"><Link to="#">FundHill</Link></li>
                                 <li className="breadcrumb-item active">Dashboard</li>
                               </ol>
                             </div>
@@ -142,46 +145,46 @@ function Dashboard() {
                               <div className="card-box">
                                 <h4 className="header-title mb-3">Inbox</h4>
                                 <div className="inbox-widget slimscroll" style={{maxHeight: 324}}>
-                                  <NavLink to="#">
+                                  <Link to="#">
                                     <div className="inbox-item">
                                       <div className="inbox-item-img"><img src="/assets/images/users/avatar-1.jpg" className="rounded-circle" alt="" /></div>
                                       <p className="inbox-item-author">Chadengle</p>
                                       <p className="inbox-item-text">Hey! there I'm available...</p>
                                       <p className="inbox-item-date">13:40 PM</p>
                                     </div>
-                                  </NavLink>
-                                  <NavLink to="#">
+                                  </Link>
+                                  <Link to="#">
                                     <div className="inbox-item">
                                       <div className="inbox-item-img"><img src="/assets/images/users/avatar-2.jpg" className="rounded-circle" alt="" /></div>
                                       <p className="inbox-item-author">Tomaslau</p>
                                       <p className="inbox-item-text text-truncate">I've finished it! See you so...</p>
                                       <p className="inbox-item-date">13:34 PM</p>
                                     </div>
-                                  </NavLink>
-                                  <NavLink to="#">
+                                  </Link>
+                                  <Link to="#">
                                     <div className="inbox-item">
                                       <div className="inbox-item-img"><img src="/assets/images/users/avatar-3.jpg" className="rounded-circle" alt="" /></div>
                                       <p className="inbox-item-author">Stillnotdavid</p>
                                       <p className="inbox-item-text">This theme is awesome!</p>
                                       <p className="inbox-item-date">13:17 PM</p>
                                     </div>
-                                  </NavLink>
-                                  <NavLink to="#">
+                                  </Link>
+                                  <Link to="#">
                                     <div className="inbox-item">
                                       <div className="inbox-item-img"><img src="assets/images/users/avatar-4.jpg" className="rounded-circle" alt="" /></div>
                                       <p className="inbox-item-author">Kurafire</p>
                                       <p className="inbox-item-text">Nice to meet you</p>
                                       <p className="inbox-item-date">12:20 PM</p>
                                     </div>
-                                  </NavLink>
-                                  <NavLink to="#">
+                                  </Link>
+                                  <Link to="#">
                                     <div className="inbox-item">
                                       <div className="inbox-item-img"><img src="assets/images/users/avatar-5.jpg" className="rounded-circle" alt="" /></div>
                                       <p className="inbox-item-author">Shahedk</p>
                                       <p className="inbox-item-text">Hey! there I'm available...</p>
                                       <p className="inbox-item-date">10:15 AM</p>
                                     </div>
-                                  </NavLink>
+                                  </Link>
                            
                                 </div>
                               </div>
@@ -274,7 +277,9 @@ function Dashboard() {
                      {/* end container-fluid */}
                   </div>
                    {/* end content */}
-
+ 
+                  </div>
+                 
 
               
 

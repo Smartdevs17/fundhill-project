@@ -3,7 +3,7 @@ import "./Login.css";
 
 import { Fragment, useEffect } from "react";
 import { Store } from "../../../services";
-import {NavLink} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 const $store = new Store();
 
 const Login = () => {
@@ -46,7 +46,12 @@ const Login = () => {
               <button className="btn btn-success btn-block waves-effect waves-light" type="submit"> Log In </button>
           </div>
 
-          <NavLink to="pages-recoverpw.html" className="text-muted"><i className="mdi mdi-lock mr-1"></i> Forgot your password?</NavLink>
+          <Link to="#" className="text-muted"><i className="mdi mdi-lock mr-1"></i> Forgot your password?</Link>
+
+          <div className="form-group">
+          <Link to="/auth/register" className="text-muted"> Don't have an account Yet?Register</Link>
+          </div>
+
 
       </form>
     </Fragment>

@@ -1,7 +1,9 @@
 // STYLES
 import "./Register.css";
 
+
 import { Fragment } from "react";
+import { Link } from "react-router-dom"
 
 const Register = () => {
   return (
@@ -33,10 +35,14 @@ const Register = () => {
           </div>
 
           <div className="form-group text-center">
-              <button className="btn btn-success btn-block waves-effect waves-light" type="submit"> Log In </button>
+              <button className="btn btn-success btn-block waves-effect waves-light" type="submit"> Register</button>
           </div>
 
-          <a href="pages-recoverpw.html" className="text-muted"><i className="mdi mdi-lock mr-1"></i> Forgot your password?</a>
+          <Link to="#" className="text-muted"><i className="mdi mdi-lock mr-1"></i> Forgot your password?</Link>
+          <div className="form-group">
+          <Link to="/auth/login" className="text-muted"> Have an account? Login</Link>
+          </div>
+
 
       </form>
     </Fragment>

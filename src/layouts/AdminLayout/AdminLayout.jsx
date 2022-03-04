@@ -1,6 +1,6 @@
 import {Fragment} from 'react'
-import {Footer, Navbar,Sidebar,Content} from "../components/index"
-
+import {Footer, Navbar,Sidebar} from "../components/index"
+import {Outlet} from "react-router-dom"
 
 function AdminLayout() {
   return (
@@ -8,7 +8,8 @@ function AdminLayout() {
         <div id="wrapper">
             <Navbar />
             <Sidebar />
-            
+
+            <Outlet />        
             <Footer />
             {/* <Content /> */}
         </div>
